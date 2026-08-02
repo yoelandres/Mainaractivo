@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="El Pregonero de las Fiestas de Mainar 2026.">
+    <link rel="icon" href="./img/Comision.png">
+    <title>Pregonero 2026 · Fiestas Mainar</title>
+    <link rel="stylesheet" href="./css/style-pregonero.css">
+</head>
+
+<body>
+
+    <nav class="nav-princ">
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul>
+            <li class="nav-item-dropdown">
+                <a href="index.html" class="nav-link-principal">INICIO</a>
+                <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-label="Ver subapartados de Inicio"><span class="flecha">+</span></button>
+                <ul class="nav-submenu">
+                    <li><a href="index.html#programa">Programa</a></li>
+                    <li><a href="index.html#gymkana-fotografica">Gymkana Fotográfica</a></li>
+                </ul>
+            </li>
+            <li><a href="reinas.html">REINAS</a></li>
+            <li><a href="eclipse.html">ECLIPSE</a></li>
+            <li class="nav-item-dropdown">
+                <button type="button" class="nav-link-principal nav-link-solo-despliega">VOCES</button>
+                <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-label="Ver subapartados de Voces"><span class="flecha">+</span></button>
+                <ul class="nav-submenu">
+                    <li><a href="voces.html">Saludos</a></li>
+                    <li><a href="pregonero.html">Pregonero</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="pregonero-section">
+
+        <div class="pregonero-img fade-in">
+            <div class="pregonero-img-inner">
+                <img id="pregoneroFoto" src="img/Pregonero.jpg" alt="El Pregonero de Mainar 2026" crossorigin="anonymous">
+                <canvas id="pregoneroPixelado" class="pregonero-pixelado" aria-hidden="true"></canvas>
+            </div>
+        </div>
+
+        <div class="pregonero-info fade-in">
+
+            <div class="pregonero-bloqueo" id="pregoneroBloqueo">
+                <p class="eyebrow">Fiestas de Mainar 2026</p>
+                <h1>EL PREGONERO</h1>
+
+                <p>Todavía no podemos desvelar quién dará el pregón de este año… ¡pero ya queda menos! Vuelve por aquí cuando la cuenta atrás llegue a cero.</p>
+
+                <div class="pregonero-cuenta" aria-live="polite">
+                    <div class="pregonero-cuenta-item">
+                        <span id="pcDias">00</span>
+                        <small>días</small>
+                    </div>
+                    <div class="pregonero-cuenta-item">
+                        <span id="pcHoras">00</span>
+                        <small>horas</small>
+                    </div>
+                    <div class="pregonero-cuenta-item">
+                        <span id="pcMinutos">00</span>
+                        <small>min</small>
+                    </div>
+                    <div class="pregonero-cuenta-item">
+                        <span id="pcSegundos">00</span>
+                        <small>seg</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pregonero-revelado" id="pregoneroRevelado" hidden>
+                <p class="eyebrow">Fiestas de Mainar 2026</p>
+                <h1>EL PREGONERO</h1>
+
+                <p>[Texto provisional] Queridos vecinos y vecinas de Mainar, es un honor para mí dirigiros unas palabras con motivo de nuestras fiestas patronales.</p>
+
+                <p>[Texto provisional] Aquí irá el saludo completo del pregonero en cuanto nos lo facilitéis, con el mismo cariño y la misma ilusión con la que se vive esta fiesta cada año.</p>
+
+                <p class="viva"><strong>¡VIVA MAINAR!<br>
+                ¡VIVA SAN ROQUE!<br>
+                ¡VIVA NTRA. SRA. ASUNCIÓN!</strong></p>
+
+                <p class="firma">Un saludo del Pregonero.<br>
+                <strong>[Nombre del Pregonero]</strong></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="./js/nav-menu.js"></script>
+    <script src="./js/script-pregonero.js"></script>
+</body>
+</html>
