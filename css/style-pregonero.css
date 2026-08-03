@@ -274,6 +274,7 @@ nav.nav-princ li.nav-item-dropdown {
   height: 100%;
   width: auto;
   max-width: 34vw;
+  aspect-ratio: 1152 / 2048;
   object-fit: cover;
   object-position: top center;
   border-radius: 12px;
