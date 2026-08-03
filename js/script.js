@@ -82,12 +82,12 @@ document.querySelectorAll(".acto").forEach(acto => {
 });
 
 const fotosSorpresa = [
-  { archivo: "img/GymkanaFotografica1.jpeg", fecha: "2026-08-01T19:00:00" },
-  { archivo: "img/GymkanaFotografica2.jpeg", fecha: "2026-08-01T00:00:00" },
-  { archivo: "img/GymkanaFotografica3.jpeg", fecha: "2026-08-01T00:00:00" },
-  { archivo: "img/GymkanaFotografica4.jpeg", fecha: "2026-08-01T00:00:00" },
-  { archivo: "img/GymkanaFotografica5.jpeg", fecha: "2026-08-01T00:00:00" },
-  { archivo: "img/GymkanaFotografica6.jpeg", fecha: "2026-08-01T00:00:00" }
+  { archivo: "img/GymkanaFotografica1.jpeg", fecha: "2026-08-13T19:00:00" },
+  { archivo: "img/GymkanaFotografica2.jpeg", fecha: "2026-08-14T00:00:00" },
+  { archivo: "img/GymkanaFotografica3.jpeg", fecha: "2026-08-15T00:00:00" },
+  { archivo: "img/GymkanaFotografica4.jpeg", fecha: "2026-08-16T00:00:00" },
+  { archivo: "img/GymkanaFotografica5.jpeg", fecha: "2026-08-17T00:00:00" },
+  { archivo: "img/GymkanaFotografica6.jpeg", fecha: "2026-08-17T00:00:00" }
 ];
 
 const sorpresaGrid = document.getElementById("sorpresaGrid");
