@@ -1,9 +1,5 @@
 const FECHA_REVELACION_PREGONERO = new Date("2026-08-13T20:00:00");
 
-// Ruta real de la foto codificada en Base64 para que no aparezca en texto
-// plano en el código fuente mientras el pregonero sigue en secreto.
-// (Nota: esto solo evita que se vea "a simple vista" al inspeccionar; no es
-// una protección real frente a alguien que sepa decodificar Base64).
 const FOTO_CODIFICADA = "aW1nL3ByZWdvbmVyby00ZjlhMjFrNy5qcGc=";
 
 const elBloqueo = document.getElementById("pregoneroBloqueo");
