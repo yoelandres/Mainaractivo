@@ -1,4 +1,4 @@
-const FECHA_REVELACION_PREGONERO = new Date("2026-08-13T19:00:00");
+const FECHA_REVELACION_PREGONERO = new Date("2026-08-03T15:31:00");
 
 
 const elBloqueo = document.getElementById("pregoneroBloqueo");
