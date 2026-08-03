@@ -1,4 +1,10 @@
-const FECHA_REVELACION_PREGONERO = new Date("2026-08-13T20:00:00");
+const FECHA_REVELACION_PREGONERO = new Date("2026-08-13T19:00:00");
+
+// Ruta real de la foto codificada en Base64 para que no aparezca en texto
+// plano en el código fuente mientras el pregonero sigue en secreto.
+// (Nota: esto solo evita que se vea "a simple vista" al inspeccionar; no es
+// una protección real frente a alguien que sepa decodificar Base64).
+const FOTO_CODIFICADA = "aW1nL3ByZWdvbmVyby00ZjlhMjFrNy5qcGc=";
 
 const elBloqueo = document.getElementById("pregoneroBloqueo");
 const elRevelado = document.getElementById("pregoneroRevelado");
@@ -6,9 +12,17 @@ const elDias = document.getElementById("pcDias");
 const elHoras = document.getElementById("pcHoras");
 const elMinutos = document.getElementById("pcMinutos");
 const elSegundos = document.getElementById("pcSegundos");
+const foto = document.getElementById("pregoneroFoto");
 const capaOculta = document.getElementById("pregoneroOculto");
 
 let intervaloCuenta = null;
+let fotoCargada = false;
+
+function cargarFotoReal() {
+  if (fotoCargada || !foto) return;
+  fotoCargada = true;
+  foto.src = atob(FOTO_CODIFICADA);
+}
 
 function mostrarBloqueado() {
   if (elBloqueo) elBloqueo.hidden = false;
@@ -17,6 +31,7 @@ function mostrarBloqueado() {
 }
 
 function revelarPregonero() {
+  cargarFotoReal();
   if (capaOculta) capaOculta.classList.add("oculto");
   if (elBloqueo) elBloqueo.hidden = true;
   if (elRevelado) elRevelado.hidden = false;
