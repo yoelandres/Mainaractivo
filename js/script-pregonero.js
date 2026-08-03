@@ -1,4 +1,4 @@
-const FECHA_REVELACION_PREGONERO = new Date("2026-08-03T18:14:00");
+const FECHA_REVELACION_PREGONERO = new Date("2026-08-13T20:00:00");
 
 // Ruta real de la foto codificada en Base64 para que no aparezca en texto
 // plano en el código fuente mientras el pregonero sigue en secreto.
