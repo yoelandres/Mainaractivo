@@ -82,11 +82,12 @@ document.querySelectorAll(".acto").forEach(acto => {
 });
 
 const fotosSorpresa = [
-  { archivo: "img/GymkanaFotografica1.jpeg", fecha: "2026-08-13T19:00:00" },
-  { archivo: "img/GymkanaFotografica1.jpeg", fecha: "2026-08-14T00:00:00" },
-  { archivo: "img/GymkanaFotografica1.jpeg", fecha: "2026-08-15T00:00:00" },
-  { archivo: "img/GymkanaFotografica1.jpeg", fecha: "2026-08-16T00:00:00" },
-  { archivo: "img/GymkanaFotografica1.jpeg", fecha: "2026-08-17T00:00:00" }
+  { archivoCodificado: "aW1nL0d5bWthbmFGb3RvZ3JhZmljYTEuanBlZw==", fecha: "2026-08-01T19:00:00" },
+  { archivoCodificado: "aW1nL0d5bWthbmFGb3RvZ3JhZmljYTIuanBlZw==", fecha: "2026-08-01T00:00:00" },
+  { archivoCodificado: "aW1nL0d5bWthbmFGb3RvZ3JhZmljYTMuanBlZw==", fecha: "2026-08-01T00:00:00" },
+  { archivoCodificado: "aW1nL0d5bWthbmFGb3RvZ3JhZmljYTQuanBlZw==", fecha: "2026-08-01T00:00:00" },
+  { archivoCodificado: "aW1nL0d5bWthbmFGb3RvZ3JhZmljYTUuanBlZw==", fecha: "2026-08-01T00:00:00" },
+  { archivoCodificado: "aW1nL0d5bWthbmFGb3RvZ3JhZmljYTYuanBlZw==", fecha: "2026-08-01T00:00:00" }
 ];
 
 const sorpresaGrid = document.getElementById("sorpresaGrid");
