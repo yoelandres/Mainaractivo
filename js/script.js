@@ -1,5 +1,5 @@
 const fechaObjetivo = new Date("2026-08-13T00:00:00");
-const fraseFinal = "¡ESTAMOS DE FIESTA!";
+const fraseFinal = "¡GRACIAS POR TODO, NOS VEMOS EL AÑO QUE VIENE!";
 
 function actualizarContador() {
   const ahora = new Date();
